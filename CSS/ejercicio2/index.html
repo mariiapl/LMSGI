@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        p{
+            border: 2px green;
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>Primer párrafo</p>
+    <p style="color: red;">Segundo párrafo</p>
+
+    <!--¿De qué color sale el texto de cada párrafo? ¿Por qué?
+    Primer párrafo: El color de texto será amarillo porque el archivo 
+    styles.css se carga después de los estilos internos. Esto significa 
+    que el estilo de la hoja externa sobrescribe el color blanco 
+    definido en la cabecera. Antes de definir la hoja externa,
+    el color del texto es blanco.
+
+    Segundo párrafo: Los estilos en línea tienen prioridad sobre los estilos externos, 
+    por lo que el texto será rojo y no amarillo. El texto del segundo párrafo siempre 
+    sale rojo.-->
+    
+</body>
+</html>
