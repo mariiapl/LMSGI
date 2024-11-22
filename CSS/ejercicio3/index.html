@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p><em>Texto destacado en un párrafo</em></p> <!-- Azul: No hay conflicto de reglas, se cumple. -->
+    <div><em>Texto destacado en un div</em></div> <!-- Rojo: No hay conflicto de reglas, se cumple. -->
+    <!-- Los siguientes cambian según organizamos las reglas en el documento css. -->
+     <!-- Tercer texto destacado: Este texto está dentro de un párrafo, el cual está dentro de un <div>. 
+        Sin embargo, como la regla CSS que aplica a los <em> dentro de un <p> tiene mayor especificidad, 
+        el texto será de color azul. -->
+    <div>
+        <p><em>Texto destacado dentro de un párrafo que está dentro de un div</em></p> 
+    </div>
+    <!-- Cuarto texto destacado: Este texto está dentro de un <div> dentro de un <p>, y siguiendo las 
+        reglas de especificidad y cascada de CSS, se mostrará en rojo, porque el <div> tiene más peso 
+        que el <p> en cuanto a la aplicación de los estilos.-->
+    <p><div><em>Texto destacado dentro de un div, dentro de un párrafo</em></div></p>
+</body>
+</html>
