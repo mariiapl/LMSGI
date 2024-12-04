@@ -3,67 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MPL | Ejercicio 13</title>
 </head>
 <body>
     <h2>TELEBIRRIA</h2>
     <h4>PARA REALIZAR SU PEDIDO, RELLENE EL FORMULARIO</h4>
-    <fieldset>
-        <legend>Datos personales y de envío</legend>
-        <form>
-            <label for="fname">Nombre</label>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Apellidos</label>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="dir">Domicilio</label>
-            <input type="text" id="dir" name="dir"><br>
-            <label for="loc">Localidad</label>
-            <input type="text" id="loc" name="loc"><br>
-            <label for="cpost">Código postal</label>
-            <input type="text" id="cpost" name="cpost"><br>
-            <label for="telf">Teléfono</label>
-            <input type="text" id="telf" name="telf"><br>
-        </form>
-    </fieldset>
-    <fieldset>
-        <legend>Elija la opción de entrega</legend>
-        <form>
-            <input type="radio" id="pickup" name="delivery_option" value="RecogerLocal">
-            <label for="pickup">Recoger en el local</label><br>
-            <input type="radio" id="deliver" name="delivery_option" value="EnviarDomicilio">
-            <label for="deliver">Enviar a domicilio</label><br>
-        </form>
-    </fieldset>
-    <fieldset>
-        <legend>¿Quiere que le enciemos nuestras ofertas?</legend>
-        <form>
-            <input type="checkbox" id="opt1" name="opt1" value="dir">
-            <label for="opt1">Enviar al domicilio</label><br>
-            <input type="checkbox" id="opt2" name="opt2" value="mail">
-            <label for="opt2">Enviar por email</label><br>
-        </form>
-    </fieldset>
-    <fieldset>
-        <legend>Elija su menu</legend>
-        <form>
-        <label for="swtam">Tamaño del bocadillo</label><br>
-        <select id="swtam" name="swtam">
-            <option value="small">pequeño</option>
-            <option value="medium">mediano</option>
-            <option value="big">grande</option>
-            <option value="sbig">enorme</option>
-        </select><br>
-        <label for="swcont">Contenido del bocadillo</label><br>
-        <select id="swcont" name="swcont">
-            <option value="anchoas">anchoas</option>
-            <option value="calamares">calamares</option>
-            <option value="mejillones">mejillones</option>
-            <option value="jamon">jamon</option>
-        </select><br>
-        <label for="message">Puede añadir alguna sugerencia</label><br>
-        <textarea name="message" rows="10" cols="30">Por ejemplo que calienten el pan, etc.</textarea>
-    </fieldset>
+    <form>
+        <fieldset>
+            <legend>Datos personales y de envío</legend>
+                <label for="fname">Nombre</label>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Apellidos</label>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="dir">Domicilio</label>
+                <input type="text" id="dir" name="dir"><br>
+                <label for="loc">Localidad</label>
+                <input type="text" id="loc" name="loc"><br>
+                <label for="cpost">Código postal</label>
+                <input type="text" id="cpost" name="cpost"><br>
+                <label for="telf">Teléfono</label>
+                <input type="text" id="telf" name="telf"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Elija la opción de entrega</legend>
+                <input type="radio" id="pickup" name="delivery_option" value="RecogerLocal">
+                <label for="pickup">Recoger en el local</label><br>
+                <input type="radio" id="deliver" name="delivery_option" value="EnviarDomicilio">
+                <label for="deliver">Enviar a domicilio</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>¿Quiere que le enciemos nuestras ofertas?</legend>
+                <input type="checkbox" id="opt1" name="opt1" value="dir">
+                <label for="opt1">Enviar al domicilio</label><br>
+                <input type="checkbox" id="opt2" name="opt2" value="mail">
+                <label for="opt2">Enviar por email</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Elija su menu</legend>
+            <label for="swtam">Tamaño del bocadillo</label><br>
+            <select id="swtam" name="swtam">
+                <option value="small">pequeño</option>
+                <option value="medium">mediano</option>
+                <option value="big">grande</option>
+                <option value="sbig">enorme</option>
+            </select><br>
+            <label for="swcont">Contenido del bocadillo</label><br>
+            <select id="swcont" name="swcont">
+                <option value="anchoas">anchoas</option>
+                <option value="calamares">calamares</option>
+                <option value="mejillones">mejillones</option>
+                <option value="jamon">jamon</option>
+            </select><br>
+            <label for="message">Puede añadir alguna sugerencia</label><br>
+            <textarea name="message" rows="10" cols="30">Por ejemplo que calienten el pan, etc.</textarea>
+        </fieldset>
+        <input type="submit">
     </form>
-    <input type="submit">
 </body>
 </html>
